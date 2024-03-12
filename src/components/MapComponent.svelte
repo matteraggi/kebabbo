@@ -15,8 +15,7 @@
 
 <style>
     .map-container {
-        width: 100%; 
-        max-width: 800px; 
+
         height: 400px; 
         overflow: hidden;
     }

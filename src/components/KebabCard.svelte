@@ -62,11 +62,9 @@
     </div>
 </button>
 {#if showDetails}
-<div class="bg-white rounded-3xl p-3 flex">
+<div class="bg-white rounded-3xl p-3 flex gap-7">
     <!-- Contenuto del dropdown -->
-      
-      <MapComponent mapLink={googleMapsLink} />
-      
+    <div class="w-[50%]"><MapComponent mapLink={googleMapsLink} /></div>
     <div class="w-[50%]">stats</div>
 </div>
 {/if}

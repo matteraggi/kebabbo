@@ -2,13 +2,11 @@
 	import "../app.css";
 </script>
 
-
-
-<nav class="bg-[#c71010] dark:bg-gray-900 fixed w-full z-20 top-0 start-0">
+<nav class="bg-[#c71010] fixed w-full z-20 top-0 start-0">
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 		<img src="./kebabbo_logo.png" class="h-8" alt="Kebbabo Logo">	
 	<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"></div>
-		<input type="checkbox" id="toggleMenu" class="hidden md:hidden">
+	<input type="checkbox" id="toggleMenu" class="hidden">
     <label for="toggleMenu" class="md:hidden">
 		<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
 			<path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
