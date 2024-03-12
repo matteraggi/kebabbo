@@ -26,6 +26,9 @@ export const kebabboDb = [
 	{
 		id: 3,
 		name: 'Agra',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 4.5,
 		price: 4.5,
@@ -36,6 +39,9 @@ export const kebabboDb = [
 	{
 		id: 4,
 		name: 'Pamcial',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 3,
 		price: 3.5,
@@ -46,6 +52,9 @@ export const kebabboDb = [
 	{
 		id: 5,
 		name: 'Pizza N Pizza',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 3.5,
 		price: 3.5,
@@ -56,6 +65,9 @@ export const kebabboDb = [
 	{
 		id: 6,
 		name: 'Delizioso Food',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 4,
 		price: 3.5,
@@ -66,6 +78,9 @@ export const kebabboDb = [
 	{
 		id: 7,
 		name: 'Pizzeria Gli Scugnizzi',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 3.5,
 		price: 4,
@@ -76,6 +91,9 @@ export const kebabboDb = [
 	{
 		id: 8,
 		name: 'Ekopollo',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 3.5,
 		price: 3.5,
@@ -86,6 +104,9 @@ export const kebabboDb = [
 	{
 		id: 9,
 		name: 'Beirut Snack',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 3.5,
 		price: 2,
@@ -96,6 +117,9 @@ export const kebabboDb = [
 	{
 		id: 10,
 		name: 'Taj Mahal',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 4,
 		price: 2.5,
@@ -106,6 +130,9 @@ export const kebabboDb = [
 	{
 		id: 11,
 		name: 'Bella Istanbul 3',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 3,
 		price: 2.5,
@@ -116,6 +143,9 @@ export const kebabboDb = [
 	{
 		id: 12,
 		name: 'Juicy Kebab (AM)',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 3.5,
 		price: 3.5,
@@ -126,6 +156,9 @@ export const kebabboDb = [
 	{
 		id: 13,
 		name: 'Ses Doner',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 4,
 		price: 3,
@@ -136,6 +169,9 @@ export const kebabboDb = [
 	{
 		id: 14,
 		name: 'Star Kebab',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 4,
 		price: 4,
@@ -146,6 +182,9 @@ export const kebabboDb = [
 	{
 		id: 15,
 		name: 'Ciao Kebab',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 4,
 		price: 2,
@@ -156,6 +195,9 @@ export const kebabboDb = [
 	{
 		id: 16,
 		name: 'Pizzeria Girasole',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 4,
 		price: 4,
@@ -166,6 +208,9 @@ export const kebabboDb = [
 	{
 		id: 17,
 		name: 'Sham cibo siriano',
+		description:
+			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
+		
 		map: '',
 		quality: 2.5,
 		price: 3,
