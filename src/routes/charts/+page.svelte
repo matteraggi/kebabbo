@@ -1,8 +1,13 @@
-<script>
-    let showDetails = false;
-  
-    function toggleDetails() {
-      showDetails = !showDetails;
+<script lang="ts">
+    let showDetails1 = false; // Stato del primo box
+    let showDetails2 = false; // Stato del secondo box
+
+    function toggleDetails(boxNumber: number) {
+        if (boxNumber === 1) {
+            showDetails1 = !showDetails1; // Cambia lo stato del primo box
+        } else if (boxNumber === 2) {
+            showDetails2 = !showDetails2; // Cambia lo stato del secondo box
+        }
     }
 </script>
   
@@ -10,8 +15,8 @@
     <div class="w-[80%] lg:w-[60%] h-full">
         <h1 class="text-3xl mb-3">Kebabbo Charts</h1>
         <div class="h-[80%] overflow-y-scroll">
-            <div class="bg-white rounded-3xl p-5 my-5 flex flex-col items-center lg:items-stretch">
-                <button on:click={toggleDetails} aria-expanded={showDetails} aria-haspopup="true">
+            <div class="relative bg-white rounded-3xl p-5 my-5 flex flex-col items-center lg:items-stretch z-10">
+                <button on:click={() => toggleDetails(1)} aria-expanded={showDetails1} aria-haspopup="true">
                 <div class="flex flex-col lg:flex-row justify-between">
                     <h2 class="text-2xl">Abano Kebab Indiano</h2>
                     <div class="flex gap-2 mt-2 lg:mt-0 justify-center">
@@ -30,15 +35,17 @@
                     </div>
                 </div>
             </button>
-            {#if showDetails}
-            <div class="bg-white rounded-3xl p-3 flex">
-                <!-- Contenuto del dropdown -->
-                <div class="w-[50%]">maps</div>
-                <div class="w-[50%]">stats</div>
-            </div>
-            {/if}
         </div>
-          
-        </div>       
+        {#if showDetails1}
+        <div class="relative bg-[#E7E7E7] rounded-b-3xl p-3 flex -mt-[38px] z-0 py-8 gap-5">
+            <!-- Contenuto del dropdown -->
+            <div class="w-[45%]"><img src="./square.png" alt="pos" class="rounded-3xl"/></div>
+            <div class="w-[45%]"><p class="mt-6">frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio frigo frocio</p>                        <img src="./empty-star.svg" alt="star" class="w-8 h-8"/>
+                <img src="./half-star.svg" alt="star" class="w-8 h-8"/>
+            </div>
+        </div>
+        {/if}
+        
+        </div>    
     </div>
 </div>
