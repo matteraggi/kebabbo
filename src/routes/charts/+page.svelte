@@ -1,24 +1,72 @@
 <script lang="ts">
 import { kebabboDb } from './../../kebabboDb.js';
 import KebabCard from './../../components/KebabCard.svelte';
+
+interface KebabberProps {        
+        id: number;
+        name: string;
+        description: string;
+        map: string;
+        quality: number;
+        price: number;
+        dimension: number;
+        fun: number;
+        menu: number;
+    }
+
+let dbArray: KebabberProps[] = Object.values(kebabboDb);
+
+let order = false;
+let currentOrder = "rating";
+
+function changeOrder() {
+    order = !order;
+    setOrder(currentOrder);
+    console.log(dbArray)
+}
+
+function setOrder(type: string){
+    console.log(type);
+    switch (type) {
+        case "rating":
+            currentOrder = "rating";
+            dbArray = dbArray.sort((a, b) => order ? a.quality - b.quality : b.quality - a.quality);
+            break;
+        case "distance":
+            currentOrder = "distance";
+            break;
+        case "name":
+            currentOrder = "name";
+            dbArray = dbArray.sort((a, b) => order ? b.name.localeCompare(a.name) : a.name.localeCompare(b.name));
+            break;
+        default:
+            // In caso di un tipo non valido, mantieni l'ordine attuale
+            break;
+    }
+}
+
 </script>
 <div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
     <div class="w-[80%] lg:w-[60%] h-full">
-        <div class="flex justify-between mb-3">
-            <div class="flex gap-3">
-                <p class="text-xl text-black font-bold">Sort by:</p>
-                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl">Rating</button>
-                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl">Distance</button>
-                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl">Name</button>
+        <div class="flex justify-between mb-3 align-middle">
+            <div class="flex gap-3 items-center">
+                <p class="text-xl text-black font-bold h-fit">Sort by:</p>
+                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("rating")} aria-expanded={order}>Rating</button>
+                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("distance")} aria-expanded={order}>Distance</button>
+                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("name")} aria-expanded={order}>Name</button>
             </div>
             <div>
-                <button class="bg-[#c71010] p-2 text-white rounded-full">
+                <button class="bg-[#c71010] p-2 text-white rounded-full" on:click={changeOrder} aria-expanded={order}>
+                    {#if order}
                     <img src="./arrow-up.svg" alt="freccia su" class="h-6 w-6"/>
+                    {:else}
+                    <img src="./arrow-down.svg" alt="freccia giù" class="h-6 w-6"/>
+                    {/if}
                 </button>
             </div>
         </div>
         <div class="h-[85%] overflow-y-scroll scrollbar-hide pb-12">
-            {#each kebabboDb as kebab}
+            {#each dbArray as kebab}
                 <KebabCard kebabber={kebab} />
             {/each}
         </div>     
