@@ -48,12 +48,20 @@ function setOrder(type: string){
 </script>
 <div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
     <div class="w-[80%] lg:w-[60%] h-full">
-        <div class="flex justify-between mb-3 align-middle">
-            <div class="flex gap-3 items-center">
-                <p class="text-xl text-black font-bold h-fit">Sort by:</p>
-                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("rating")} aria-expanded={order}>Rating</button>
-                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("distance")} aria-expanded={order}>Distance</button>
-                <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("name")} aria-expanded={order}>Name</button>
+        <div class="flex-col lg:flex lg:flex-row justify-between mb-3 align-middle">
+            <div class="flex-col lg:flex lg:flex-row gap-3 items-center">
+                <p class="text-xl text-black font-bold h-fit mb-3">Sort by:</p>
+                <div class="flex gap-3 mb-3">
+                    <div>
+                        <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("rating")} aria-expanded={order}>Rating</button>
+                    </div>
+                    <div>
+                        <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("distance")} aria-expanded={order}>Distance</button>
+                    </div>
+                    <div>
+                        <button class="bg-[#c71010] px-3 py-1 text-white rounded-3xl" on:click={() => setOrder("name")} aria-expanded={order}>Name</button>
+                    </div>
+                </div>
             </div>
             <div>
                 <button class="bg-[#c71010] p-2 text-white rounded-full" on:click={changeOrder} aria-expanded={order}>
