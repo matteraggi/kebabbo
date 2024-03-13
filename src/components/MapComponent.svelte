@@ -1,7 +1,7 @@
 <script lang="ts">
 	
     export let mapLink: string; 
-    const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+    const apiKey = process.env.VITE_GOOGLE_MAPS_API_KEY;
 
     function getEmbedSrc() {
         if(!mapLink) return `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Kebabbo`;
