@@ -2,10 +2,16 @@
 	import "../app.css";
 </script>
 
-<nav class="bg-[#c71010] fixed w-full z-20 top-0 start-0">
+<nav class="bg-[#c71010] rounded-b-xl fixed w-full z-20 top-0 start-0">
 	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-		<img src="./kebabbo_logo.png" class="h-8" alt="Kebbabo Logo">	
-	<div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"></div>
+		<div class="flex gap-12 w-[20%]">
+			<a href="/">
+				<img src="./kebabbo-scritta-navbar.png" class="h-10" alt="Kebbabo Scritta">
+			</a>
+		</div>
+	<div class="hidden lg:flex md:order-2 md:space-x-0 rtl:space-x-reverse w-[20%] justify-end">
+		<img src="./kebabbo-logo-navbar.png" class="h-10" alt="Kebbabo Logo">	
+	</div>
 	<input type="checkbox" id="toggleMenu" class="hidden">
     <label for="toggleMenu" class="md:hidden">
 		<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">

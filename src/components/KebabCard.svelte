@@ -1,5 +1,6 @@
 <script lang="ts">
     import MapComponent from './MapComponent.svelte';
+    import StatsComponent from './StatsComponent.svelte';
     interface KebabberProps {        
         id: number;
         name: string;
@@ -33,8 +34,6 @@
     const { fullStars, hasHalfStar } = calculateStars();
     const starArray = createStarArray(fullStars, hasHalfStar);
         
-    const googleMapsLink = 'https://www.google.com/maps/place/Empire+State+Building/@40.7484405,-73.9878531,17z/'; 
-
 </script>
 
 
@@ -54,18 +53,27 @@
     </div>
     <div class="mt-3 hidden lg:flex lg:justify-start"><p class="text-left">{kebabber.description}</p></div>
     <div class="hidden lg:flex mt-3 text-stone-400 italic"><p>Address: Via A. Volta, 1, 35031 Abano Terme PD, Italy</p></div>
-    <div class="flex justify-between">
-        <div class="flex gap-5 mt-3">
-            <button class="bg-[#c71010] rounded-3xl py-2 px-4 text-white hidden lg:flex z-10"><a href="/">Visualizza sulla Mappa</a></button>
-            <button class="bg-[#c71010] rounded-3xl py-2 px-4 text-white z-10">Portami lì</button>
-        </div>
-    </div>
 </button>
 {#if showDetails}
-<div class="bg-white rounded-3xl p-3 flex gap-7">
+<div class="bg-white rounded-3xl p-3 gap-7 flex-col lg:flex lg:flex-row">
     <!-- Contenuto del dropdown -->
-    <div class="w-[50%]"><MapComponent mapLink={googleMapsLink} /></div>
-    <div class="w-[50%]">stats</div>
+    <div class="w-full lg:w-[55%]">
+        <MapComponent mapLink={kebabber.map} />
+    </div>
+    <div class="w-full lg:w-[45%]">
+        <div class="h-[30%]">qualcosa</div>
+        <StatsComponent kebabberStats={kebabber}/>
+        <div class="flex justify-between">
+            <div class="flex gap-5 mt-3">
+                <button class="bg-[#c71010] rounded-3xl py-2 px-4 text-white z-10">
+                    <a href="/">Vedi sulla Mappa</a>
+                </button>
+                <button class="bg-[#c71010] rounded-3xl py-2 px-4 text-white z-10">
+                    Portami lì
+                </button>
+            </div>
+         </div>
+    </div>
 </div>
 {/if}
 </div>
