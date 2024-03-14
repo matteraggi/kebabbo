@@ -5,12 +5,14 @@
         id: number;
         name: string;
         description: string;
+        mapquery: string;
         map: string;
         quality: number;
         price: number;
         dimension: number;
         fun: number;
         menu: number;
+        rating: number;
     }
 
     function calculateStars(stats: number) {

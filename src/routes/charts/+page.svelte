@@ -6,12 +6,14 @@ interface KebabberProps {
         id: number;
         name: string;
         description: string;
+        mapquery: string;
         map: string;
         quality: number;
         price: number;
         dimension: number;
         fun: number;
         menu: number;
+        rating: number;
     }
 
 let dbArray: KebabberProps[] = Object.values(kebabboDb);
@@ -22,7 +24,6 @@ let currentOrder = "rating";
 function changeOrder() {
     order = !order;
     setOrder(currentOrder);
-    console.log(dbArray)
 }
 
 function setOrder(type: string){
@@ -30,7 +31,7 @@ function setOrder(type: string){
     switch (type) {
         case "rating":
             currentOrder = "rating";
-            dbArray = dbArray.sort((a, b) => order ? a.quality - b.quality : b.quality - a.quality);
+            dbArray = dbArray.sort((a, b) => order ? a.rating - b.rating : b.rating - a.rating);
             break;
         case "distance":
             currentOrder = "distance";
@@ -44,8 +45,8 @@ function setOrder(type: string){
             break;
     }
 }
-
 </script>
+
 <div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
     <div class="w-[80%] lg:w-[60%] h-full">
         <div class="flex-col lg:flex lg:flex-row justify-between mb-3 align-middle">
@@ -73,7 +74,7 @@ function setOrder(type: string){
                 </button>
             </div>
         </div>
-        <div class="h-[75%] overflow-y-scroll scrollbar-hide pb-12">
+        <div class="h-[75%] lg:h-[85%] overflow-y-scroll scrollbar-hide pb-12">
             {#each dbArray as kebab}
                 <KebabCard kebabber={kebab} />
             {/each}

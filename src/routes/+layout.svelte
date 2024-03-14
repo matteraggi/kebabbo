@@ -3,7 +3,6 @@
 
 	if (typeof document !== 'undefined') {
     const toggleMenu = document.getElementById('toggleMenu') as HTMLInputElement | null;
-    const navbarSticky = document.getElementById('navbar-sticky');
 
     if (toggleMenu) {
         document.querySelectorAll('#navbar-sticky a').forEach(anchor => {
@@ -13,8 +12,6 @@
         });
     }
 }
-
-
 </script>
 
 <nav class="bg-[#c71010] rounded-b-xl fixed w-full z-20 top-0 start-0">

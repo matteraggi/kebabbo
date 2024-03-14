@@ -1,38 +1,46 @@
 <script lang="ts">
     import MapComponent from './MapComponent.svelte';
     import StatsComponent from './StatsComponent.svelte';
+    import { beforeUpdate } from 'svelte';
+    
     interface KebabberProps {        
         id: number;
         name: string;
         description: string;
+        mapquery: string;
         map: string;
         quality: number;
         price: number;
         dimension: number;
         fun: number;
         menu: number;
+        rating: number
     }
-    let showDetails = false; 
+
     export let kebabber: KebabberProps; 
-    const rating=(kebabber.quality+kebabber.price+kebabber.dimension+kebabber.fun+kebabber.menu)/5;
+    let showDetails = false; 
+    let starArray: string[] = [];
 
     function calculateStars() {
-        const fullStars = Math.floor(rating);
-        const hasHalfStar = rating - fullStars >= 0.5;
-        return { fullStars, hasHalfStar };
-    }
-    function createStarArray(fullStars: number, hasHalfStar: boolean) {
+        const fullStars = Math.floor(kebabber.rating);
+        const hasHalfStar = kebabber.rating - fullStars >= 0.5;
         const stars = Array(fullStars).fill('full');
         if (hasHalfStar) stars.push('half');
         while (stars.length < 5) stars.push('empty');
         return stars;
     }
+
     function toggleDetails() {
         showDetails = !showDetails;
     }
+    
+    // Aggiorna le stelle prima di ogni aggiornamento del componente
+    beforeUpdate(() => {
+        starArray = calculateStars();
+    });
 
-    const { fullStars, hasHalfStar } = calculateStars();
-    const starArray = createStarArray(fullStars, hasHalfStar);
+    // Inizializza le stelle quando il componente viene creato
+    $: starArray = calculateStars();
         
 </script>
 
@@ -52,13 +60,13 @@
         </div>
     </div>
     <div class="mt-3 hidden lg:flex lg:justify-start"><p class="text-left">{kebabber.description}</p></div>
-    <div class="hidden lg:flex mt-3 text-stone-400 italic"><p>Address: Via A. Volta, 1, 35031 Abano Terme PD, Italy</p></div>
+    <div class="hidden lg:flex mt-3 text-stone-400 italic"><p>100 metri da te </p></div>
 </button>
 {#if showDetails}
 <div class="bg-white rounded-3xl p-3 gap-7 flex-col lg:flex lg:flex-row">
     <!-- Contenuto del dropdown -->
     <div class="w-full lg:w-[55%]">
-        <MapComponent mapLink={kebabber.map} />
+        <MapComponent mapLink={kebabber.mapquery} />
     </div>
     <div class="w-full lg:w-[45%] flex flex-col justify-center">
         <div class="flex lg:hidden mt-3 mb-3"><p class="text-left">{kebabber.description}</p></div>
