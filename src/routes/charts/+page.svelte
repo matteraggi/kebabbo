@@ -47,7 +47,7 @@ function setOrder(type: string){
 }
 </script>
 
-<div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
+<div class="flex flex-col align-middle items-center bg-[#ffba1c] min-h-screen pt-24 w-full">
     <div class="w-[80%] lg:w-[60%] h-full">
         <div class="flex-col lg:flex lg:flex-row justify-between mb-3 align-middle">
             <div class="flex-col lg:flex lg:flex-row gap-3 items-center">
