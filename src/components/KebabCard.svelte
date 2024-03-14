@@ -48,7 +48,7 @@
 <div class="bg-white rounded-3xl p-5 my-5 flex flex-col items-center lg:items-stretch">
     <button on:click={toggleDetails} aria-expanded={showDetails} aria-haspopup="true">
     <div class="flex flex-col lg:flex-row justify-between">
-        <h2 class="text-2xl">{kebabber.name}</h2>
+        <h2 class="text-2xl font-bold">{kebabber.name}</h2>
         <div class="flex gap-2 mt-2 lg:mt-0 justify-center">
             {#each starArray as starType}
                 <img 

@@ -42,6 +42,9 @@
 					<a href="/charts" class="block py-2 px-3 text-white rounded md:p-0 text-xl">Charts</a>
 				</li>
 				<li>
+					<a href="/special" class="block py-2 px-3 text-white rounded md:p-0 text-xl">Special</a>
+				</li>
+				<li>
 					<a href="/about" class="block py-2 px-3 text-white rounded md:p-0 text-xl">About</a>
 				</li>
 			</ul>

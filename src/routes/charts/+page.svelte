@@ -1,7 +1,6 @@
 <script lang="ts">
 import { kebabboDb } from './../../kebabboDb.js';
 import KebabCard from './../../components/KebabCard.svelte';
-	import { beforeUpdate } from 'svelte';
 
 interface KebabberProps {        
         id: number;
