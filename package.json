@@ -28,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/speed-insights": "^1.0.10",
 		"dotenv": "^16.4.5"
 	}
 }

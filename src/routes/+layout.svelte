@@ -1,5 +1,8 @@
 <script lang="ts">
 	import "../app.css";
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+	injectSpeedInsights();
 
 	if (typeof document !== 'undefined') {
     const toggleMenu = document.getElementById('toggleMenu') as HTMLInputElement | null;
