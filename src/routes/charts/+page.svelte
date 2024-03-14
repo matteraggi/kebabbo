@@ -7,7 +7,7 @@ interface KebabberProps {
         id: number;
         name: string;
         description: string;
-        mapquery: string;
+        mapLink: string;
         map: string;
         quality: number;
         price: number;

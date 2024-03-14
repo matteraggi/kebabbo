@@ -7,7 +7,7 @@
         id: number;
         name: string;
         description: string;
-        mapquery: string;
+        mapLink: string;
         map: string;
         quality: number;
         price: number;
@@ -66,7 +66,7 @@
 <div class="bg-white rounded-3xl p-3 gap-7 flex-col lg:flex lg:flex-row">
     <!-- Contenuto del dropdown -->
     <div class="w-full lg:w-[55%]">
-        <MapComponent mapLink={kebabber.mapquery} />
+        <MapComponent mapLink={kebabber.mapLink} />
     </div>
     <div class="w-full lg:w-[45%] flex flex-col justify-center">
         <div class="flex lg:hidden mt-3 mb-3"><p class="text-left">{kebabber.description}</p></div>
