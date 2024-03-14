@@ -1,4 +1,6 @@
 <script lang="ts">
+	import KebabboAbroad from './../../components/KebabboAbroad.svelte';
+	import KebabboLegends from './../../components/KebabboLegends.svelte';
     let activeTab = 0;
 
     function setActiveTab(index: number) {
@@ -6,43 +8,37 @@
     }
 
     const tabs = [
-    { label: 'Legendary', content: ['Contenuto Tab 1'] },
-    { label: 'KebabWorld', content: ['Contenuto Tab 2'] },
+    { label: 'Legendary'},
+    { label: 'KebabWorld'},
   ];
 
 </script>
-
-<div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
-    <div class="w-[60%]">
-        <div class="flex">
-            {#each tabs as tab, index}
-            <button
-                class="px-4 pb-2 mr-2 text-black focus:outline-none text-xl"
-                class:selected="{ activeTab === index }"
-                on:click={() => setActiveTab(index)}
-            >
-                {tab.label}
-            </button>
-            {/each}
-        </div>
-        
-        <div class="mt-4">
+<div class="flex flex-col align-middle items-center bg-[#ffba1c] min-h-screen lg:h-screen pt-24 w-full">
+    <div class="w-[80%] lg:w-[60%]">
+        {#each tabs as tab, index}
+        <button
+            class="px-4 pb-2 mr-2 text-black text-xl focus:outline-none"
+            class:selected="{ activeTab === index }"
+            on:click={() => setActiveTab(index)}
+        >
+            {tab.label}
+        </button>
+        {/each}
             {#each tabs as tab, index}
             <div
-                class="p-4"
+            class="mt-4"
                 class:hidden="{ activeTab !== index }"
             >
-                {#if tab.content}
-                {#each tab.content as item}
-                    {item}
-                {/each}
+                {#if index === 0}
+                    <KebabboLegends />
                 {/if}
-            </div>
+                {#if index === 1}
+                    <KebabboAbroad />
+                {/if}
+    </div>
             {/each}
-        </div>
-    </div>
-    </div>
-
+            </div>
+            </div>
 <style>
     .selected {
     @apply font-bold border-b-2 border-[#c71010];
