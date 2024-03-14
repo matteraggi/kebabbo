@@ -60,8 +60,8 @@
     <div class="w-full lg:w-[55%]">
         <MapComponent mapLink={kebabber.map} />
     </div>
-    <div class="w-full lg:w-[45%]">
-        <div class="h-[30%]">qualcosa</div>
+    <div class="w-full lg:w-[45%] flex flex-col justify-center">
+        <div class="flex lg:hidden mt-3 mb-3"><p class="text-left">{kebabber.description}</p></div>
         <StatsComponent kebabberStats={kebabber}/>
         <div class="flex justify-between">
             <div class="flex gap-5 mt-3">

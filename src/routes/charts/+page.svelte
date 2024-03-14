@@ -73,7 +73,7 @@ function setOrder(type: string){
                 </button>
             </div>
         </div>
-        <div class="h-[85%] overflow-y-scroll scrollbar-hide pb-12">
+        <div class="h-[75%] overflow-y-scroll scrollbar-hide pb-12">
             {#each dbArray as kebab}
                 <KebabCard kebabber={kebab} />
             {/each}

@@ -11,7 +11,7 @@
 </script>
 
 <div class="map-container">
-    <iframe title="kebab map" src={getEmbedSrc()} class="w-[300px] lg:w-[500px] h-[400px]" style="border:0;" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe title="kebab map" src={getEmbedSrc()} class="w-[300px] lg:w-[500px] h-[300px] lg:h-[400px]" style="border:0;" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 <style>
