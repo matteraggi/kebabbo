@@ -74,7 +74,7 @@
         </button>
     </div>
 </div>
-<div class="h-[500px] lg:h-[700px] overflow-y-scroll scrollbar-hide pb-12">
+<div class="lg:h-[700px] overflow-y-auto lg:overflow-y-scroll scrollbar-hide pb-12 mt-4">
     {#each dbArray as kebab}
         <KebabCard kebabber={kebab} />
     {/each}
