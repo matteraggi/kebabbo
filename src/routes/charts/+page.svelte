@@ -48,11 +48,6 @@ function changeOrder() {
     setOrder(currentOrder);
 }
 
-    // Aggiorna le stelle prima di ogni aggiornamento del componente
-    beforeUpdate(() => {
-        setOrder("rating");
-    });
-
 </script>
 
 <div class="flex flex-col align-middle items-center bg-[#ffba1c] min-h-screen lg:h-screen pt-24 w-full">
