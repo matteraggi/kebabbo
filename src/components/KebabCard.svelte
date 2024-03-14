@@ -77,7 +77,7 @@
                     <a href="/">Vedi sulla Mappa</a>
                 </button>
                 <button class="bg-[#c71010] rounded-3xl py-2 px-4 text-white z-10">
-                    Portami lì
+                    <a href={kebabber.map} target="_blank">Portami lì</a>
                 </button>
             </div>
          </div>
