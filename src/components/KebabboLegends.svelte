@@ -49,8 +49,6 @@
     
 </script>
 
-
-
 <div class="flex-col lg:flex lg:flex-row justify-between mb-3 align-middle">
     <div class="flex-col lg:flex lg:flex-row gap-3 items-center">
         <p class="text-xl text-black font-bold h-fit mb-3">Sort by:</p>
