@@ -67,7 +67,7 @@
         </div>
     </div>
     <div class="mt-3 hidden lg:flex lg:justify-start"><p class="text-left">{kebabber.description}</p></div>
-    <div class="hidden lg:flex mt-3 text-stone-400 italic"><p>{distance}</p></div>
+    <div class="lg:flex mt-3 text-stone-400 italic"><p>{distance}</p></div>
 </button>
 {#if showDetails}
 <div class="bg-white rounded-3xl p-3 gap-7 flex-col lg:flex lg:flex-row">
