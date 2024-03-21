@@ -2,7 +2,7 @@
 	import AboutBadges from "./AboutBadges.svelte";
 
 </script>
-<div class="flex-col lg:flex lg:flex-row">
+<div class="flex-col lg:flex lg:flex-row mt-6 lg:mt-0">
     <div class="w-full lg:w-2/3 lg:mt-20">
        <p class="text-xl font-medium">In Italia il mondo del Kebab è ancora un mondo oscuro. I migliori locali sono sottovalutati, e i peggiori ricevono recensioni alte su Google.
         <br/><br/>

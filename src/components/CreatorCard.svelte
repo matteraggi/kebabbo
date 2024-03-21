@@ -8,7 +8,7 @@
 </script>
 
 <div class="group w-72 [perspective:1000px]">
-    <div class="relative h-full w-full rounded-3xl shadow-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <div class="relative h-[450px] w-full rounded-3xl shadow-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         <div class="absolute inset-0 top-0 left-0 w-full h-full bg-white rounded-3xl p-6 flex flex-col items-center">
             <img src={image} alt={name} class="w-[220px] rounded-xl " />
             <h2 class="text-2xl font-bold mt-4">{name}</h2>
