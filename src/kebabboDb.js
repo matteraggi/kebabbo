@@ -29,7 +29,7 @@ export const kebabboDb = [
 		dimension: 4,
 		fun: 3.5,
 		menu: 4.5,
-		lat:44.49552454706613,
+		lat: 44.49552454706613,
 		lng: 11.351201688955515,
 		rating: (4.5 + 4.5 + 4 + 3.5 + 4.5) / 5
 	},
@@ -46,8 +46,8 @@ export const kebabboDb = [
 		dimension: 4,
 		fun: 2,
 		menu: 3.5,
-		lat:44.50003763830086, 
-		lng:11.349549777842267,
+		lat: 44.50003763830086,
+		lng: 11.349549777842267,
 		rating: (3 + 3.5 + 4 + 2 + 3.5) / 5
 	},
 	{
@@ -63,8 +63,8 @@ export const kebabboDb = [
 		dimension: 2.5,
 		fun: 3.5,
 		menu: 3.5,
-		lat:44.44122023994239, 
-		lng:11.353898479699899,
+		lat: 44.44122023994239,
+		lng: 11.353898479699899,
 		rating: (3.5 + 3.5 + 2.5 + 3.5 + 3.5) / 5
 	},
 	{
@@ -80,8 +80,8 @@ export const kebabboDb = [
 		dimension: 2.5,
 		fun: 4.5,
 		menu: 4,
-		lat:44.495336047041256, 
-		lng:11.35136977786408,
+		lat: 44.495336047041256,
+		lng: 11.35136977786408,
 		rating: (4 + 3.5 + 2.5 + 4.5 + 4) / 5
 	},
 	{
@@ -97,8 +97,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 3,
-		lat:44.49581289486129, 
-		lng:11.350948395679964,
+		lat: 44.49581289486129,
+		lng: 11.350948395679964,
 		rating: (3.5 + 4 + 3.5 + 3 + 3) / 5
 	},
 	{
@@ -114,8 +114,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 4,
-		lat:44.49899649504584, 
-		lng:11.35758787786029,
+		lat: 44.49899649504584,
+		lng: 11.35758787786029,
 		rating: (3.5 + 3.5 + 3.5 + 3 + 4) / 5
 	},
 	{
@@ -131,8 +131,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 3.5,
-		lat:44.498122329370595, 
-		lng:11.347381049252236,
+		lat: 44.498122329370595,
+		lng: 11.347381049252236,
 		rating: (3.5 + 2 + 3.5 + 3 + 3.5) / 5
 	},
 	{
@@ -148,8 +148,8 @@ export const kebabboDb = [
 		dimension: 5,
 		fun: 4,
 		menu: 4.5,
-		lat:44.49863374140671, 
-		lng:11.346995887949022,
+		lat: 44.49863374140671,
+		lng: 11.346995887949022,
 		rating: (4 + 2.5 + 5 + 4 + 4.5) / 5
 	},
 	{
@@ -165,8 +165,8 @@ export const kebabboDb = [
 		dimension: 2,
 		fun: 4.5,
 		menu: 3.5,
-		lat:44.507655754030885, 
-		lng:11.341626164417788,
+		lat: 44.507655754030885,
+		lng: 11.341626164417788,
 		rating: (3 + 2.5 + 2 + 4.5 + 3.5) / 5
 	},
 	{
@@ -182,8 +182,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3.5,
 		menu: 3.5,
-		lat:44.49900319505951, 
-		lng:11.350921364350919,
+		lat: 44.49900319505951,
+		lng: 11.350921364350919,
 		rating: (4 + 2 + 3.5 + 3.5 + 3.5) / 5
 	},
 	{
@@ -199,8 +199,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3.5,
 		menu: 3.5,
-		lat:44.47289630000181, 
-		lng:11.369324408541178,
+		lat: 44.47289630000181,
+		lng: 11.369324408541178,
 		rating: (4 + 4 + 3.5 + 3.5 + 3.5) / 5
 	},
 	{
@@ -216,9 +216,41 @@ export const kebabboDb = [
 		dimension: 2.5,
 		fun: 3.5,
 		menu: 3.5,
-		lat:44.49015213601782, 
-		lng:11.355579336433305,
+		lat: 44.49015213601782,
+		lng: 11.355579336433305,
 		rating: (2.5 + 3 + 2.5 + 3.5 + 3.5) / 5
+	},
+	{
+		id: 14,
+		name: 'Ali Baba Food House',
+		description: 'Classico kebabbaro marcio, forse un pò troppo.',
+		mapLink:
+			'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.64143956007183!2d11.344393137782635!3d44.50255241904296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd55784ff4ad1%3A0x9a3701a18beabb77!2sAli%20Baba%20Food%20House!5e0!3m2!1sit!2sit!4v1711022033441!5m2!1sit!2sit',
+		map: 'https://maps.app.goo.gl/DvgypAvHeH8NZbmUA',
+		quality: 2.5,
+		price: 3,
+		dimension: 3.5,
+		fun: 3,
+		menu: 2.5,
+		lat: 44.502393813395784,
+		lng: 11.344633522648785,
+		rating: (2.5 + 3 + 3.5 + 3 + 2.5) / 5
+	},
+	{
+		id: 15,
+		name: 'Murgulet Kebab',
+		description: 'Piccolo locale con un Kebab discreto. Ce sta.',
+		mapLink:
+			'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.06863368524245!2d11.344392066269116!3d44.502653295997085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd498f0bc3c6f%3A0x80ffad7b110e305f!2sMurgulet%20Kebab!5e0!3m2!1sit!2sit!4v1711022147816!5m2!1sit!2sit',
+		map: 'https://maps.app.goo.gl/hHyUMXJTfQbnFXK37',
+		quality: 3.5,
+		price: 3.5,
+		dimension: 3.5,
+		fun: 3,
+		menu: 3,
+		lat: 44.502762686149566,
+		lng: 11.344524843283763,
+		rating: (3.5 + 3.5 + 3.5 + 3 + 3) / 5
 	}
 ];
 
@@ -236,8 +268,8 @@ export const kebabboDbLegend = [
 		dimension: 4,
 		fun: 4.5,
 		menu: 3,
-		lat:44.49500216415304, 
-		lng:11.35173445235859,
+		lat: 44.49500216415304,
+		lng: 11.35173445235859,
 		rating: (4.5 + 4.5 + 4 + 4.5 + 3) / 5
 	}
 ];
@@ -256,7 +288,7 @@ export const kebabboDbAbroad = [
 		dimension: 3,
 		fun: 3.5,
 		menu: 2.5,
-		lat:52.37309182934147,
+		lat: 52.37309182934147,
 		lng: 4.8996468252972525,
 		rating: (3.5 + 3.5 + 3 + 3.5 + 2.5) / 5
 	},
@@ -273,8 +305,8 @@ export const kebabboDbAbroad = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 2.5,
-		lat:52.07681760601054, 
-		lng:4.310218635582207,
+		lat: 52.07681760601054,
+		lng: 4.310218635582207,
 		rating: (4 + 3 + 3.5 + 3 + 2.5) / 5
 	},
 	{
@@ -290,8 +322,8 @@ export const kebabboDbAbroad = [
 		dimension: 3.5,
 		fun: 4,
 		menu: 4,
-		lat:52.062836407892085, 
-		lng:4.490784506746622,
+		lat: 52.062836407892085,
+		lng: 4.490784506746622,
 		rating: (4 + 4 + 3.5 + 4 + 4) / 5
-	},
+	}
 ];
