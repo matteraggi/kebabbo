@@ -62,26 +62,17 @@ const centerOnUser = () => {
     });
   };
   </script>
-  <div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
-    <div class="w-[60%]"><h1 class="text-3xl">Kebabbo Maps</h1> <button on:click={centerOnUser}>Center on Me</button></div>
+<div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
+  <div class="w-[60%] lg:w-[60%] h-full">
+    <h1 class="text-3xl">Kebabbo Maps</h1> <button on:click={centerOnUser}>Center on Me</button>
     <div  id="map-container" class="my-7 align-middle items-center "/>
+    </div>
 </div>
 
 <style>
     #map-container {
-      height: 800px; /* Adjust as needed */
-      width: 800px; 
+      height: 80%;
+      width: 100%; 
       border-radius: 40px;
     }
-    .marker { /* Style for your custom marker icon */
-    background-size: cover; 
-    border-radius: 50%;  
-}
-
-.popup {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
-}
   </style>
