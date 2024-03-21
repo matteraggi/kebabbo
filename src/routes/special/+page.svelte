@@ -24,9 +24,10 @@
             {tab.label}
         </button>
         {/each}
+    </div>
             {#each tabs as tab, index}
             <div
-            class="mt-4"
+            class="mt-4 w-[80%] lg:w-[60%] h-full"
                 class:hidden="{ activeTab !== index }"
             >
                 {#if index === 0}
@@ -37,8 +38,7 @@
                 {/if}
     </div>
             {/each}
-            </div>
-            </div>
+    </div>
 <style>
     .selected {
     @apply font-bold border-b-2 border-[#c71010];

@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex flex-col w-fit justify-center items-center">
-    <div class="bg-white rounded-full w-16 h-16 p-2">
+    <div class="bg-white rounded-full w-16 h-16 p-2 overflow-hidden transition-transform duration-500 transform-gpu hover:scale-125">
         <img src={logo} alt="badge" class="w-full h-full" />
     </div>
     <p class="mt-1 text-black font-semibold">{text}</p>
