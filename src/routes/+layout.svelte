@@ -27,7 +27,9 @@
 			</a>
 		</div>
 		<div class="hidden lg:flex md:order-2 md:space-x-0 rtl:space-x-reverse w-[20%] justify-end">
-			<img src="./kebabbo-logo-navbar.png" class="h-10" alt="Kebbabo Logo">	
+			<a href="/">
+				<img src="./kebabbo-logo-navbar.png" class="h-10" alt="Kebbabo Logo">	
+			</a>
 		</div>
 		<input type="checkbox" id="toggleMenu" class="hidden">
 		<label for="toggleMenu" class="md:hidden">
@@ -41,7 +43,7 @@
 					<a href="/" class="block py-2 px-3 text-white rounded md:p-0 text-xl" aria-current="page">Maps</a>
 				</li>
 				<li>
-					<a href="/charts" class="block py-2 px-3 text-white rounded md:p-0 text-xl">Charts</a>
+					<a href="/rank" class="block py-2 px-3 text-white rounded md:p-0 text-xl">Top Kebab</a>
 				</li>
 				<li>
 					<a href="/special" class="block py-2 px-3 text-white rounded md:p-0 text-xl">Special</a>

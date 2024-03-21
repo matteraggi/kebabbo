@@ -1,7 +1,7 @@
 <script lang="ts">
-import { kebabboDb } from './../../kebabboDb.js';
-import KebabCard from './../../components/KebabCard.svelte';
-import type {KebabberProps} from './../../utils/types';
+import { kebabboDb } from '../../kebabboDb.js';
+import KebabCard from '../../components/KebabCard.svelte';
+import type {KebabberProps} from '../../utils/types.js';
 
     
     
