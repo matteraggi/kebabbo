@@ -1,8 +1,9 @@
 <script lang="ts">
 	import "../app.css";
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-
 	injectSpeedInsights();
+
+
 
 	if (typeof document !== 'undefined') {
     const toggleMenu = document.getElementById('toggleMenu') as HTMLInputElement | null;
@@ -15,6 +16,7 @@
         });
     }
 }
+
 </script>
 
 <nav class="bg-[#c71010] rounded-b-xl fixed w-full z-20 top-0 start-0">

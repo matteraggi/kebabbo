@@ -1,21 +1,8 @@
 <script lang="ts">
     import { kebabboDbAbroad } from './../kebabboDb';
     import KebabCard from './KebabCard.svelte';
-    
-    interface KebabberProps {        
-            id: number;
-            name: string;
-            description: string;
-            mapLink: string;
-            map: string;
-            quality: number;
-            price: number;
-            dimension: number;
-            fun: number;
-            menu: number;
-            rating: number;
-        }
-        
+    import type {KebabberProps} from './../utils/types';
+
         function setOrder(type: string){
             console.log(type);
             switch (type) {

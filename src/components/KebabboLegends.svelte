@@ -1,20 +1,10 @@
 <script lang="ts">
     import { kebabboDbLegend } from './../kebabboDb';
-    import KebabCard from './KebabCard.svelte';
+    import KebabCard from './KebabCard.svelte';    
+    import type {KebabberProps} from './../utils/types';
+
     
-    interface KebabberProps {        
-            id: number;
-            name: string;
-            description: string;
-            mapLink: string;
-            map: string;
-            quality: number;
-            price: number;
-            dimension: number;
-            fun: number;
-            menu: number;
-            rating: number;
-        }
+
         
         function setOrder(type: string){
             console.log(type);

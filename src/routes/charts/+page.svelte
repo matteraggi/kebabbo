@@ -1,20 +1,9 @@
 <script lang="ts">
 import { kebabboDb } from './../../kebabboDb.js';
 import KebabCard from './../../components/KebabCard.svelte';
+import type {KebabberProps} from './../../utils/types';
 
-interface KebabberProps {        
-        id: number;
-        name: string;
-        description: string;
-        mapLink: string;
-        map: string;
-        quality: number;
-        price: number;
-        dimension: number;
-        fun: number;
-        menu: number;
-        rating: number;
-    }
+    
     
     function setOrder(type: string){
         console.log(type);
@@ -78,7 +67,7 @@ function changeOrder() {
         </div>
         <div class="h-[75%] lg:h-[85%] overflow-y-scroll scrollbar-hide pb-12">
             {#each dbArray as kebab}
-                <KebabCard kebabber={kebab} />
+            <KebabCard kebabber={kebab} /> 
             {/each}
         </div>     
         <div class="scroll-gradient"/>  

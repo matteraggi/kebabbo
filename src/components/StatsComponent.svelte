@@ -1,19 +1,8 @@
 <script lang="ts">
+    import type {KebabberProps} from './../utils/types';
+
     export let kebabberStats: KebabberProps; 
-    
-    interface KebabberProps {        
-        id: number;
-        name: string;
-        description: string;
-        mapLink: string;
-        map: string;
-        quality: number;
-        price: number;
-        dimension: number;
-        fun: number;
-        menu: number;
-        rating: number;
-    }
+   
 
     function calculateStars(stats: number) {
         const fullStars = Math.floor(stats);

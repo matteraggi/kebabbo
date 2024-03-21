@@ -2,24 +2,31 @@
     import MapComponent from './MapComponent.svelte';
     import StatsComponent from './StatsComponent.svelte';
     import { beforeUpdate } from 'svelte';
-    
-    interface KebabberProps {        
-        id: number;
-        name: string;
-        description: string;
-        mapLink: string;
-        map: string;
-        quality: number;
-        price: number;
-        dimension: number;
-        fun: number;
-        menu: number;
-        rating: number
-    }
+    import type { LocationData } from './../utils/types';
+    import { calculateDistance } from './../utils/utils'; // Assuming you have distance calculation logic 
+    import userLocation, { updateLocation } from './../locationStore';
+    import { onMount } from 'svelte';
+    import type {KebabberProps} from './../utils/types';
+
+  onMount(updateLocation);    
 
     export let kebabber: KebabberProps; 
     let showDetails = false; 
     let starArray: string[] = [];
+
+    const locationData:LocationData={
+        name: kebabber.name,
+        lat: kebabber.lat,
+        lng: kebabber.lng,
+        accuracy:null,
+        timestamp:null
+    };
+
+    let distance: string | null = null;
+
+    $: if (userLocation && locationData) {
+        userLocation.subscribe(loc=>distance = calculateDistance(loc, locationData));
+    } 
 
     function calculateStars() {
         const fullStars = Math.floor(kebabber.rating);
@@ -60,7 +67,7 @@
         </div>
     </div>
     <div class="mt-3 hidden lg:flex lg:justify-start"><p class="text-left">{kebabber.description}</p></div>
-    <div class="hidden lg:flex mt-3 text-stone-400 italic"><p>100 metri da te </p></div>
+    <div class="hidden lg:flex mt-3 text-stone-400 italic"><p>{distance}</p></div>
 </button>
 {#if showDetails}
 <div class="bg-white rounded-3xl p-3 gap-7 flex-col lg:flex lg:flex-row">

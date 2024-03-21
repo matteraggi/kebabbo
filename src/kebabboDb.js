@@ -12,6 +12,8 @@ export const kebabboDb = [
 		dimension: 2.5,
 		fun: 4,
 		menu: 3.5,
+		lat: 44.49577068772212,
+		lng: 11.350721221570447,
 		rating: (2.5 + 3 + 2.5 + 4 + 3.5) / 5
 	},
 	{
@@ -27,6 +29,8 @@ export const kebabboDb = [
 		dimension: 4,
 		fun: 3.5,
 		menu: 4.5,
+		lat:44.49552454706613,
+		lng: 11.351201688955515,
 		rating: (4.5 + 4.5 + 4 + 3.5 + 4.5) / 5
 	},
 	{
@@ -42,6 +46,8 @@ export const kebabboDb = [
 		dimension: 4,
 		fun: 2,
 		menu: 3.5,
+		lat:44.50003763830086, 
+		lng:11.349549777842267,
 		rating: (3 + 3.5 + 4 + 2 + 3.5) / 5
 	},
 	{
@@ -57,6 +63,8 @@ export const kebabboDb = [
 		dimension: 2.5,
 		fun: 3.5,
 		menu: 3.5,
+		lat:44.44122023994239, 
+		lng:11.353898479699899,
 		rating: (3.5 + 3.5 + 2.5 + 3.5 + 3.5) / 5
 	},
 	{
@@ -72,6 +80,8 @@ export const kebabboDb = [
 		dimension: 2.5,
 		fun: 4.5,
 		menu: 4,
+		lat:44.495336047041256, 
+		lng:11.35136977786408,
 		rating: (4 + 3.5 + 2.5 + 4.5 + 4) / 5
 	},
 	{
@@ -87,6 +97,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 3,
+		lat:44.49581289486129, 
+		lng:11.350948395679964,
 		rating: (3.5 + 4 + 3.5 + 3 + 3) / 5
 	},
 	{
@@ -102,6 +114,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 4,
+		lat:44.49899649504584, 
+		lng:11.35758787786029,
 		rating: (3.5 + 3.5 + 3.5 + 3 + 4) / 5
 	},
 	{
@@ -117,6 +131,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 3.5,
+		lat:44.498122329370595, 
+		lng:11.347381049252236,
 		rating: (3.5 + 2 + 3.5 + 3 + 3.5) / 5
 	},
 	{
@@ -132,6 +148,8 @@ export const kebabboDb = [
 		dimension: 5,
 		fun: 4,
 		menu: 4.5,
+		lat:44.49863374140671, 
+		lng:11.346995887949022,
 		rating: (4 + 2.5 + 5 + 4 + 4.5) / 5
 	},
 	{
@@ -147,6 +165,8 @@ export const kebabboDb = [
 		dimension: 2,
 		fun: 4.5,
 		menu: 3.5,
+		lat:44.507655754030885, 
+		lng:11.341626164417788,
 		rating: (3 + 2.5 + 2 + 4.5 + 3.5) / 5
 	},
 	{
@@ -162,6 +182,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3.5,
 		menu: 3.5,
+		lat:44.49900319505951, 
+		lng:11.350921364350919,
 		rating: (4 + 2 + 3.5 + 3.5 + 3.5) / 5
 	},
 	{
@@ -177,6 +199,8 @@ export const kebabboDb = [
 		dimension: 3.5,
 		fun: 3.5,
 		menu: 3.5,
+		lat:44.47289630000181, 
+		lng:11.369324408541178,
 		rating: (4 + 4 + 3.5 + 3.5 + 3.5) / 5
 	},
 	{
@@ -192,6 +216,8 @@ export const kebabboDb = [
 		dimension: 2.5,
 		fun: 3.5,
 		menu: 3.5,
+		lat:44.49015213601782, 
+		lng:11.355579336433305,
 		rating: (2.5 + 3 + 2.5 + 3.5 + 3.5) / 5
 	}
 ];
@@ -210,6 +236,8 @@ export const kebabboDbLegend = [
 		dimension: 4,
 		fun: 4.5,
 		menu: 3,
+		lat:44.49500216415304, 
+		lng:11.35173445235859,
 		rating: (4.5 + 4.5 + 4 + 4.5 + 3) / 5
 	}
 ];
@@ -228,6 +256,8 @@ export const kebabboDbAbroad = [
 		dimension: 3,
 		fun: 3.5,
 		menu: 2.5,
+		lat:52.37309182934147,
+		lng: 4.8996468252972525,
 		rating: (3.5 + 3.5 + 3 + 3.5 + 2.5) / 5
 	},
 	{
@@ -243,6 +273,8 @@ export const kebabboDbAbroad = [
 		dimension: 3.5,
 		fun: 3,
 		menu: 2.5,
+		lat:52.07681760601054, 
+		lng:4.310218635582207,
 		rating: (4 + 3 + 3.5 + 3 + 2.5) / 5
 	},
 	{
@@ -258,51 +290,8 @@ export const kebabboDbAbroad = [
 		dimension: 3.5,
 		fun: 4,
 		menu: 4,
+		lat:52.062836407892085, 
+		lng:4.490784506746622,
 		rating: (4 + 4 + 3.5 + 4 + 4) / 5
 	},
-	{
-		id: 3,
-		name: 'Ster Kebab (ZOET)',
-		description:
-			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
-		mapLink:
-			'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.9679149236595!2d4.485288376009418!3d52.0621078700304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c9282d2e08b9%3A0x17f97a8ac6d66316!2sSter%20Kebab!5e0!3m2!1sit!2sit!4v1710413571213!5m2!1sit!2sit',
-		map: 'https://maps.app.goo.gl/7XtDakPVe9knjkpi7',
-		quality: 4,
-		price: 4,
-		dimension: 3.5,
-		fun: 4,
-		menu: 4,
-		rating: (4 + 4 + 3.5 + 4 + 4) / 5
-	},
-	{
-		id: 3,
-		name: 'Ster Kebab (ZOET)',
-		description:
-			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
-		mapLink:
-			'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.9679149236595!2d4.485288376009418!3d52.0621078700304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c9282d2e08b9%3A0x17f97a8ac6d66316!2sSter%20Kebab!5e0!3m2!1sit!2sit!4v1710413571213!5m2!1sit!2sit',
-		map: 'https://maps.app.goo.gl/7XtDakPVe9knjkpi7',
-		quality: 4,
-		price: 4,
-		dimension: 3.5,
-		fun: 4,
-		menu: 4,
-		rating: (4 + 4 + 3.5 + 4 + 4) / 5
-	},
-	{
-		id: 3,
-		name: 'Ster Kebab (ZOET)',
-		description:
-			'A small town in the province of Padua, in the Veneto region, Italy. It is located on the eastern slope of the Euganean Hills, at the foot of Monte Rosso (349 m). The town is part of the Parco Regionale dei Colli Euganei.',
-		mapLink:
-			'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.9679149236595!2d4.485288376009418!3d52.0621078700304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c9282d2e08b9%3A0x17f97a8ac6d66316!2sSter%20Kebab!5e0!3m2!1sit!2sit!4v1710413571213!5m2!1sit!2sit',
-		map: 'https://maps.app.goo.gl/7XtDakPVe9knjkpi7',
-		quality: 4,
-		price: 4,
-		dimension: 3.5,
-		fun: 4,
-		menu: 4,
-		rating: (4 + 4 + 3.5 + 4 + 4) / 5
-	}
 ];
