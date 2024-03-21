@@ -15,3 +15,5 @@
 - [ ] la navbar sembra un po spostata a destra
 - [ ] loaders on map
 - [ ] descrizioni
+
+:trollface:
