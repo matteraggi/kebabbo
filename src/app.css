@@ -36,3 +36,8 @@
 		#ffba1c
 	); /* Gradient trasparente a bianco */
 }
+
+/* Aggiungi questa classe nel tuo file CSS */
+.expand-animation {
+	transition: max-height 0.5s ease-in-out;
+}

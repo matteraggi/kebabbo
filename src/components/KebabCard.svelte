@@ -50,8 +50,6 @@
     $: starArray = calculateStars();
         
 </script>
-
-
 <div class="bg-white rounded-3xl p-5 my-5 flex flex-col items-center lg:items-stretch">
     <button on:click={toggleDetails} aria-expanded={showDetails} aria-haspopup="true">
     <div class="flex flex-col lg:flex-row justify-between">
@@ -69,8 +67,7 @@
     <div class="mt-3 hidden lg:flex lg:justify-start"><p class="text-left">{kebabber.description}</p></div>
     <div class="lg:flex mt-3 text-stone-400 italic"><p>{distance}</p></div>
 </button>
-{#if showDetails}
-<div class="bg-white rounded-3xl p-3 gap-7 flex-col lg:flex lg:flex-row">
+<div class="bg-white rounded-3xl m-2 gap-7 flex-col lg:flex lg:flex-row {showDetails ? 'max-h-screen' : 'max-h-0'} overflow-hidden expand-animation">
     <!-- Contenuto del dropdown -->
     <div class="w-full lg:w-[55%]">
         <MapComponent mapLink={kebabber.mapLink} />
@@ -90,8 +87,9 @@
          </div>
     </div>
 </div>
-{/if}
 </div>
+
+
 
 <!-- cut stars
     <div class="star-container" style={`--cut-percentage: ${rating * 20}%`}> 
