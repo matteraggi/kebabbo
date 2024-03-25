@@ -1,4 +1,5 @@
 <script lang="ts">
+	import SpinnerSvelte from './../components/SpinnerSvelte.svelte';
     import { onMount } from 'svelte';
     import userLocation from '../locationStore';
     import { updateLocation } from '../locationStore';
@@ -8,6 +9,7 @@
     
     let dbArray: KebabberProps[] = Object.values(kebabboDb).sort((a, b) => false ? a.rating - b.rating : b.rating - a.rating);
     let map: mapboxgl.Map | null = null;
+    let isLoading = true; // Loading state
     /*const markerIcon = document.createElement('div'); 
     markerIcon.className = 'marker'; // Add your custom CSS class for styling
     markerIcon.style.backgroundImage = `url(your-icon.svg)`;
@@ -21,6 +23,10 @@
     map = new mapboxgl.Map({
       container: "map-container",
       style: 'mapbox://styles/fri3erg/clu1byups00oz01qw6ykfhmma', 
+    });
+    map.on('load', () => {
+    console.log('Map loaded');
+    isLoading = false;
     });
     
     userLocation?.subscribe((location) => {
@@ -62,11 +68,16 @@ const centerOnUser = () => {
     });
   };
   </script>
-<div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
-  <div class="w-[80%] lg:w-[60%] h-full">
-    <h1 class="text-3xl">Kebabbo Maps</h1> <button on:click={centerOnUser}>Center on Me</button>
-    <div  id="map-container" class="my-7 align-middle items-center "/>
+  <div class="flex flex-col align-middle items-center bg-[#ffba1c] h-screen pt-24 w-full">
+    <div class="w-[60%]"><h1 class="text-3xl">Kebabbo Maps</h1> <button on:click={centerOnUser}>Center on Me</button></div>
+    <div id="map-container" class="my-7 align-middle items-center" style:opacity="{isLoading ? 0 : 1}"/>
+    {#if isLoading}
+    <div style="z-index: 1000; position:absolute; ">
+    <SpinnerSvelte />
     </div>
+    {/if}
+
+
 </div>
 
 <style>
@@ -75,4 +86,16 @@ const centerOnUser = () => {
       width: 100%; 
       border-radius: 40px;
     }
+    .marker { /* Style for your custom marker icon */
+    background-size: cover; 
+    border-radius: 50%;  
+}
+
+.popup {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
   </style>
